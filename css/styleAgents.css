@@ -14,7 +14,7 @@
 }
 
 .agents .gridGallery .gridItem img {
-  width: 200%;
+  width: 100%;
   flex-grow: 1;
   object-fit: scale-down;
   object-position: center;
@@ -24,9 +24,11 @@
   
 .agents .gridGallery .gridItem img:hover {
   cursor: pointer;
-  width: 500px;
+  width: 400px;
   opacity: 1;
   filter: contrast(120%);
+  object-fit: initial;
+  object-position: center;
 } 
   
 
