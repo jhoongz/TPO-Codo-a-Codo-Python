@@ -52,27 +52,3 @@ body {
 .menu2 li:last-child {
     border-right: none;
   }
-
-
-/* Aca empieza el css para "Agentes" */
-
-.agents {
-  display: flex;
-  width: 600px;
-  height: 430px;
-}
-
-.agents img {
-  width: 0px;
-  flex-grow: 1;
-  object-fit: cover;
-  opacity: .8;
-  transition: .5s ease;
-}
-
-.agents img:hover {
-  cursor: crosshair;
-  width: 300px;
-  opacity: 1;
-  filter: contrast(120%);
-}
