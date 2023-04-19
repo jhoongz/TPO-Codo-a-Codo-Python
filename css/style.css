@@ -1,37 +1,60 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    padding: 0 1px;
   }
 
-ul {
+@media screen and(min-width: 52px) {
+  .center {
+    max-width: 52px;
+  }
+}
+
+.menu1 {
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
+
+.menu2 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
-li {
+.menu2 li {
     float: left;
-    border-right: 1px solid #bbb;
+    border-right: 1px solid #9c9b9b;
   }
   
-li a {
+.menu2 li a {
     display: block;
     color: white;
-    /* text-align: center; */
+    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
-li a:hover {
+.menu2 li a:hover {
     background-color: #111;
   }
 
-li:last-child {
+.menu2 li:last-child {
     border-right: none;
   }
+
+
+/* Aca empieza el css para "Agentes" */
 
 .agents {
   display: flex;
