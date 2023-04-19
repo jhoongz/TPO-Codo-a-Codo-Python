@@ -1,9 +1,17 @@
 .agents {
     display: flex;
-    width: 600px;
-    height: 430px;
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 0 auto;
   }
   
+  @media screen and (min-width: 900px) {
+    .agents {
+        max-width: 900px;
+    }
+  }
+
   .agents img {
     width: 0px;
     flex-grow: 1;
