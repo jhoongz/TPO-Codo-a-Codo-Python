@@ -1,7 +1,15 @@
+@font-face {
+    font-family: 'VALORANT';
+    src: url('fonts/Valorant font.tff') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'VALORANT';
+  color: aliceblue;
   background-image: url(../img/Fondo/VALORANT_Logo_V_thumbnail.jpg);
-  width: auto;
+  background-size: cover;
 }
 
 .center {
