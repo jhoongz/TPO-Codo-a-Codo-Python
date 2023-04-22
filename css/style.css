@@ -31,6 +31,9 @@ header {
   z-index: 1000;
   height: 4rem;
 }
+#hero {
+  height: 38rem;
+}
 
 header .logo {
   width: 100px;
@@ -115,13 +118,16 @@ nav ul li a:hover {
 }
 
 
-video {
+.video-main {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  max-height: 33rem;
+  max-height: 39rem;
   object-fit: cover;
+  box-shadow: 0px 12px 15px 6px rgba(172, 211, 230, 0.99);
+  -webkit-box-shadow: 0px 12px 15px 6px rgba(172, 211, 230, 0.99);
+  -moz-box-shadow: 0px 12px 15px 6px rgba(172, 211, 230, 0.99);
 }
 
 img {
@@ -178,3 +184,143 @@ button span {
   }
 }
 
+.intro-juego {
+  padding: 3rem;
+  padding-bottom: 5rem;
+  width: 60%;
+  text-align: justify;
+}
+
+.intro-juego > h1 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 4rem;
+}
+.intro-juego > p {
+  line-height: 1.8rem;
+  font-size: 1.5rem;
+}
+
+.descripcion {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(to bottom, #051e34, #113b62);
+  height: auto;
+}
+
+.slideshow-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+
+.mySlides {
+  position: absolute;
+  padding: 0;
+  padding-top: 2.5rem;
+  opacity: 0;
+  transition: opacity 1s ease;
+
+  animation: slideshow 9s infinite;
+}
+
+@keyframes slideshow {
+  0% {
+    opacity: 0;
+  }
+  33.3% {
+    opacity: 1;
+  }
+  66.6% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.mySlides:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.mySlides:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.mySlides:nth-child(3) {
+  animation-delay: 6s;
+}
+
+footer {
+  width: 100%;
+
+  bottom: 0;
+  left: 0;
+  padding: 2rem 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logopag {
+  width: 10rem;
+  padding: 0;
+}
+
+.social-icons-container,
+.footer-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid #f2f2f2;
+  font-size: 2rem;
+  color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  z-index: 3;
+}
+
+.social-icon:hover {
+  filter: invert(1);
+}
+
+.footer-menu-container {
+  list-style-type: none;
+  color: #f2f2f2;
+  font-size: 18px;
+}
+
+.menu-item {
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.menu-item:hover {
+  opacity: 1;
+}
+
+.copyright {
+  color: #f2f2f2;
+  opacity: 0.3;
+  text-align: center;
+}
+.video-footer {
+  position: absolute;
+  width: 100%;
+  max-height: 25rem;
+  object-fit: cover;
+}
