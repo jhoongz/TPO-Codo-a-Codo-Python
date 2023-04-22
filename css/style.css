@@ -1,29 +1,32 @@
-*{
-  margin: 0; padding: 0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   text-transform: capitalize;
   text-decoration: none;
 }
 
 @font-face {
-  font-family: 'VALORANT';
-  src: url('fonts/Valorant font.tff') format('truetype');
+  font-family: "VALORANT";
+  src: url("fonts/Valorant font.tff") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 body {
-font-family: 'VALORANT';
-color: aliceblue;
-background-image: url(../img/Fondo/VALORANT_Logo_V_thumbnail.jpg);
-background-size: cover;
+  font-family: "VALORANT";
+  color: aliceblue;
+  background-image: url(../img/Fondo/VALORANT_Logo_V_thumbnail.jpg);
+  background-size: cover;
 }
 
 header {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   background: black;
-  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   padding: 30px;
   display: flex;
   align-items: center;
@@ -58,7 +61,7 @@ nav ul {
   list-style: none;
 }
 
-nav ul li{
+nav ul li {
   position: relative;
   float: left;
 }
@@ -71,52 +74,49 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background: linear-gradient(60deg, #FF4655, #f8061b);
+  background: linear-gradient(60deg, #ff4655, #f8061b);
   animation: flicker 3s linear infinite;
   -webkit-transform: translateY(-7px);
   transform: translateY(-7px);
 }
 
-
 @keyframes flicker {
-  0%, 12% {
+  0%,
+  12% {
     color: #0e0f10;
-    box-shadow: 0 0 10px #03e9f4,
-              0 0 20px #03e9f4,
-              0 0 80px #03e9f4;
+    box-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 80px #03e9f4;
   }
-  12%, 19% {
+  12%,
+  19% {
     color: #ffffff;
     box-shadow: none;
   }
-  19%, 26% {
+  19%,
+  26% {
     color: #0e0f10;
-    box-shadow: 0 0 10px #03e9f4,
-              0 0 20px #03e9f4,
-              0 0 80px #03e9f4;
-  } 
-  26%, 29% {
+    box-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 80px #03e9f4;
+  }
+  26%,
+  29% {
     color: #ffffff;
     box-shadow: none;
   }
-  29%, 44% {
+  29%,
+  44% {
     color: #0e0f10;
-    box-shadow: 0 0 10px #03e9f4,
-              0 0 20px #03e9f4,
-              0 0 80px #03e9f4;
+    box-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 80px #03e9f4;
   }
-  44%, 54% {
+  44%,
+  54% {
     color: #ffffff;
     box-shadow: none;
   }
-  54%, 100% {
+  54%,
+  100% {
     color: #0e0f10;
-    box-shadow: 0 0 10px #03e9f4,
-              0 0 20px #03e9f4,
-              0 0 80px #03e9f4;
+    box-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 80px #03e9f4;
   }
 }
-
 
 .video-main {
   position: absolute;
@@ -148,7 +148,7 @@ button {
   border-radius: 30px;
   padding: 10px 0;
   width: 200px;
-  background-color: rgb(255,70,85);
+  background-color: rgb(255, 70, 85);
   font-size: 1.2rem;
   color: #fff7f7;
   font-weight: 800;
@@ -161,11 +161,11 @@ button {
   z-index: 2;
 }
 
-button:focus{
+button:focus {
   outline: none;
 }
-button:hover{
-  background: linear-gradient(60deg, #FF4655, #b71d05);
+button:hover {
+  background: linear-gradient(60deg, #ff4655, #b71d05);
   animation: flicker 3s linear infinite;
   -webkit-transform: translateY(-7px);
   transform: translateY(-7px);
@@ -176,11 +176,9 @@ button span {
   display: block;
 }
 
-
 @media screen and(min-width: 52px) {
   header {
     max-width: 52px;
-    
   }
 }
 
@@ -259,6 +257,7 @@ footer {
   bottom: 0;
   left: 0;
   padding: 2rem 15%;
+  /* background-color: #0e0e0e; */
   display: flex;
   justify-content: center;
   align-items: center;
