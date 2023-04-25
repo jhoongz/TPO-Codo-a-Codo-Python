@@ -1,3 +1,17 @@
+.title1 {
+  margin-left: 20px;
+}
+
+h2 {
+  font-family: 'VANDAL';
+  margin-left: 40px;
+}
+
+.desc {
+  font-family: sans-serif, arial, georgia;
+  color: #f2f2f2;
+}
+
 .container {
   max-width: 1000px;
   position: relative;
@@ -34,12 +48,12 @@
 
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration:0.5s;
 }
 
 @keyframes fade {
   from {opacity: .4}
-  to {opacity: 1}
+  to {opacity:0}
 }
 
 .nTxt {
@@ -52,11 +66,157 @@
 
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 100px;
+  width: 100px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #bbbbbb00;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+.dotMiniAgent {
+  display:inline;
+  position: relative;
+  top: 150px;
+  width: 600px;
+  height: 430px;
+}
+
+.miniAgent {
+  width: 60px;
+  flex-grow:0;
+  object-fit: cover;
+  opacity: .8;
+}
+
+.name {
+  position: absolute;
+  top: -2.5%;
+  margin-left: 20%;
+}
+
+.titleRol {
+  position: absolute;
+  top: 0%;
+  margin-left: 50%;
+}
+
+.rol {
+  font-family: 'VANDAL';
+  font-size: 25px;
+  position: absolute;
+  top: 5%;
+  margin-left: 2%;
+}
+
+.rol img {
+  width: auto;
+  height: auto;
+  top: 50%;
+}
+
+.titleBio {
+  position: absolute;
+  top: 100px;
+  margin-left: 50%;
+}
+
+.bio {
+  font-family: 'VANDAL';
+  font-size: 20px;
+  position: absolute;
+  top: 21%;
+  margin-left: 2%;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+}
+
+.list .fig {
+  margin: 0;
+  padding: 0;
+}
+
+.list li {
+  width: 10%;
+}
+
+.butt {
+  display: inline;
+  background-color: #11111100;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: #f2f2f2;
+}
+
+.fig{  
+  position: relative;
+}
+
+.fig:hover figcaption{
+  display: block;
+}
+
+.cont {
+  position: absolute;
+  top: 260px;
+  margin-left: 455px;
+}
+
+.cont h1{
+  position: absolute;
+  width: 60%;
+  top: 43%;
+  margin-left: 50%;
+}
+
+.cont .s1{
+  position: absolute;
+  top: 80px;
+  margin-left: 5px;  
+}
+
+.cont .s2{
+  position: absolute;
+  top: 80px;
+  margin-left: 105px;  
+}
+
+.cont .s3{
+  position: absolute;
+  top: 80px;
+  margin-left: 210px;  
+}
+
+.cont .s4{
+  position: absolute;
+  top: 80px;
+  margin-left: 310px;  
+}
+
+.fig figcaption {
+  display: none;
+  position: absolute;
+  width: 400px;
+  top: 190px;
+  margin-left: 30px;
+  background: rgba(0, 0, 0, .1);
+  text-align: center;
+  font-family: 'VANDAL';
+  color: #f2f2f2;
+}
+
+video {  
+  width: 500px;
+  height: 250px;
+  margin-left: -50px;
+}
+
+.cont img:hover {
+  display: block;
+  background: rgba(160, 4, 4, .3);
 }
