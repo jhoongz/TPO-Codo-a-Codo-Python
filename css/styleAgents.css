@@ -1,7 +1,9 @@
 body {
   font-family: "VALORANT";
   color: aliceblue;
-  background-image: url(../img/Fondo/VALORANT_Logo_V_thumbnail.jpg);
+  background-image: url(../img/Fondo/VALORANT_logo4.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -132,7 +134,7 @@ h2 {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 270px;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -185,9 +187,10 @@ h2 {
 .dotMiniAgent {
   display:inline;
   position: relative;
-  top: 150px;
+  top: 350px;
   width: 600px;
   height: 430px;
+  font-family: 'VALORANT';
 }
 
 .miniAgent {
@@ -331,10 +334,10 @@ video {
 footer {
   position: relative;
   width: 100%;
-  top: 120px;
-  right: 150px;
+  top: 370px;
+  right: 225px;
   padding: 2rem 15%;
-  /* background-color: #0e0e0e; */
+  background-color: #0e0e0e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,6 +352,10 @@ footer {
 .social-icons-container,
 .footer-menu-container {
   display: flex;
+  position: relative;
+  bottom: 1px;
+  left: 100px;
+  margin-right: 1px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -356,6 +363,9 @@ footer {
 }
 
 .social-icon {
+  position: relative;
+  bottom: 5px;
+  left: 100px;
   height: 50px;
   width: 50px;
   border-radius: 50px;
@@ -390,6 +400,9 @@ footer {
 }
 
 .copyright {
+  position: relative;
+  top: 50px;
+  right: 600px;
   color: #ffffff;
   opacity: 0.3;
   text-align: center;
