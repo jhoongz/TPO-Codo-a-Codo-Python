@@ -147,15 +147,17 @@ nav ul li a:hover {
   position: absolute;
   top: 120px;
   text-align: justify;
-  width: 50%;
+  width: 70%;
   left: 2%;
+  line-height: 25px;
+  font-size: 20px;
   font-family: "VANDAL";
 }
 
 .cards h1 {
   position: absolute;
   right: 126%;
-  bottom: 100%;
+  bottom: 98%;
   font-family: 'VALORANT';
   font-size: 35px;
 }
@@ -249,7 +251,7 @@ nav ul li a:hover {
   width: 600px;
   height: 400px;
   opacity: 1;
-  bottom: 69%;
+  bottom: 65%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -276,7 +278,7 @@ nav ul li a:hover {
   width: 600px;
   height: 400px;
   opacity: 1;
-  bottom: 69%;
+  bottom: 65%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -288,7 +290,6 @@ nav ul li a:hover {
   width: 330px;
   opacity: 0;
   /* transition: all .3s ease-in-out; */
-  z-index: 0;
   border-radius: 15px;
   background-size: contain;
 }
@@ -317,6 +318,12 @@ nav ul li a:hover {
   font-family: 'VALORANT';
   font-size: 30px;
   color: #fff;
+}
+
+.dot:hover {
+  animation-name: fade;
+  animation-duration: .8s;
+  text-decoration: underline;
 }
 
 footer {
