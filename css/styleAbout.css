@@ -8,41 +8,200 @@
 
 @font-face {
   font-family: "VALORANT";
-  src: url("fonts/Valorant font.tff") format("truetype");
+  src: url(https://www.dafont.com/es/valorant.font) format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'VANDAL';
-  src: url('fonts/VANDAL free font.ttf') format('truetype');
+  src: url(https://www.dafont.com/es/vandal.font) format('truetype');
   font-style: normal;
   font-weight: normal;
 }
 
-@media screen and(min-width: 52px) {
+/* Estilos responsivos */
+
+@media screen and (max-width: 768px) {
+  /* Estilos para pantallas con un ancho máximo de 768px */
+  
   header {
-    max-width: 52px;
+    padding: 15px;
   }
-  .gallery{
-      max-width: 52px;
+  
+  .logo {
+    width: 80px;
+  }
+  
+  nav ul li a {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .cent .t1 {
+    top: 50px;
+    font-size: 25px;
+    left: 2%;
+  }
+  
+  .cent p {
+    top: 80px;
+    font-size: 18px;
+    width: 90%;
+    left: 5%;
+    line-height: 20px;
+  }
+  
+  .gallery-container h1 {
+    top: -30px;
+    font-size: 25px;
+  }
+  
+  .gallery {
+    top: 200px;
+    font-size: 16px;
+  }
+  
+  .gallery-container {
+    top: 10px;
+  }
+  
+  .gallery-item, .map-info, .desc-info {
+    width: 100%;
+    height: 300px;
+  }
+
+  .gallery-item, .map-info {
+    width: 100%;
+    height: auto;
+    position: static;
+    transform: none;
+    margin-bottom: 20px;
+  }
+  
+  .cards {
+    top: 2%;
+  }
+  
+  .prev,
+  .next {
+    top: 200px;
+    font-size: 25px;
+  }
+  
+  .navegacion {
+    top: 60rem;
+    font-size: 20px;
+  }
+  
+  .navegacion ul {
+    margin-top: 1%;
+  }
+  
+  .navegacion p {
+    width: 90%;
+    font-size: 16px;
+    margin-top: 2%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Estilos para pantallas con un ancho máximo de 480px */
+  
+  header {
+    padding: 10px;
+  }
+  
+  .logo {
+    width: 60px;
+  }
+  
+  nav ul li a {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .cent .t1 {
+    top: 30px;
+    font-size: 20px;
+    left: 2%;
+  }
+  
+  .cent p {
+    top: 60px;
+    font-size: 16px;
+    width: 90%;
+    left: 5%;
+    line-height: 18px;
+  }
+  
+  .gallery-container h1 {
+    top: -20px;
+    font-size: 20px;
+  }
+  
+  .gallery {
+    top: 150px;
+    font-size: 14px;
+  }
+  
+  .gallery-container {
+    top: 10px;
+  }
+  
+  .gallery-item, .map-info, .desc-info {
+    width: 100%;
+    height: 250px;
+  }
+
+  .gallery-item, .map-info {
+    width: 100%;
+    height: auto;
+    position: static;
+    transform: none;
+    margin-bottom: 15px;
+  }
+  
+  .cards {
+    top: 2%;
+  }
+  
+  .prev, .next {
+    top: 150px;
+    font-size: 20px;
+  }
+  
+  .navegacion {
+    top: 45rem;
+    font-size: 16px;
+  }
+  
+  .navegacion ul {
+    margin-top: 1%;
+  }
+  
+  .navegacion p {
+    width: 90%;
+    font-size: 14px;
+    margin-top: 2%;
   }
 }
 
 body {
-  color: aliceblue;
+  color: rgb(231, 235, 238);
   background-image: url(../img/Fondo/VALORANT_Logo_V_thumbnail.jpg);
   background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
   background: black;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,8 +225,7 @@ header .logo {
 
 .logo {
   width: 100px;
-  object-fit: contain;
-  cursor: pointer;
+  height: auto;
 }
 
 nav {
@@ -79,15 +237,15 @@ nav ul {
 }
 
 nav ul li {
-  position: relative;
-  float: left;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 nav ul li a {
+  color: #fff;
   font-size: 16px;
+  font-weight: bold;
   padding: 10px;
-  color: rgb(255, 255, 255);
-  display: block;
 }
 
 nav ul li a:hover {
@@ -135,78 +293,121 @@ nav ul li a:hover {
   }
 }
 
-.cent .t1 {
+.contItemCar {
+  position: relative;
+  z-index: 2;
+}
+
+.cent {
   position: absolute;
-  top: 80px;
-  font-family: 'VALORANT';
-  font-size: 35px;
-  left: 2%;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.cent .t1 {
+  font-family: "VALORANT";
+  font-size: 40px;
+  color: #f7f7f7;
+  position: absolute;
+  top: 50px;
+  left: 50px;
 }
 
 .cent p {
-  position: absolute;
-  top: 120px;
-  text-align: justify;
-  width: 95%;
-  left: 2%;
-  line-height: 25px;
-  font-size: 20px;
   font-family: 'VANDAL';
+  font-size: 24px;
+  text-align: justify;
+  color: #ffffff;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 95%;
+  line-height: 30px;
+  z-index: 1;
+}
+
+.gallery-container {
+  position: relative;
+  top: 200px;
 }
 
 .gallery-container h1 {
   position: absolute;
-  right: 126%;
-  bottom: 96%;
+  top: -530px;
+  left: 50px;
+  font-size: 40px;
   font-family: 'VALORANT';
-  font-size: 35px;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 .gallery {
   position: relative;
   width: 100%;
   height: 100%;
-  top: 350px;
+  top: 47rem;
   font-family: 'VANDAL';
   font-size: 20px;
   color: #fff;
+  z-index: 1;
 }
 
-.gallery-container {
+.gallery-item, .map-info {
+  width: 30%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
   position: relative;
-  align-items: center;
-  display: flex;
-  height: 1920px;
-  margin: 0 auto;
-  max-width: 1000px;
-  top: 30px;
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 0.3s ease;
 }
+
+.desc-info {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc-info h2 {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
 
 .cards {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .prev, .next {
+  font-size: 30px;
+  color: #fff;
   cursor: pointer;
   position: absolute;
-  top: 350px;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 35px;
-  transition: 0.8s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  bottom: 12rem;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 600px;
 }
 
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  right: 600px;
 }
 
 .prev:hover, .next:hover {
@@ -223,6 +424,11 @@ nav ul li a:hover {
   to {opacity:1}
 }
 
+.cards {
+  position: relative;
+  bottom: 50%;
+}
+
 .slide {
   display: none;
 }
@@ -236,12 +442,11 @@ nav ul li a:hover {
   margin: auto;
 }
 
-.gallery-item {
+.gallery-item, .map-info, .desc-info {
   position: absolute;
   height: 200px;
   width: 330px;
   opacity: 0;
-  /* transition: all .3s ease-in-out; */
   z-index: 0;
   border-radius: 15px;
   background-size: contain;
@@ -263,17 +468,6 @@ nav ul li a:hover {
   transition: .3s ease-in-out;
 }
 
-.map-info {
-  position: absolute;
-  height: 200px;
-  width: 330px;
-  opacity: 0;
-  /* transition: all .3s ease-in-out; */
-  z-index: 0;
-  border-radius: 15px;
-  background-size: contain;
-}
-
 .map-info-1, .map-info-2, .map-info-3, .map-info-4, .map-info-5, .map-info-6, .map-info-7, .map-info-8, .map-info-9 {
   box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, .35);
   width: 600px;
@@ -283,16 +477,6 @@ nav ul li a:hover {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-}
-
-.desc-info {
-  position: absolute;
-  height: 200px;
-  width: 330px;
-  opacity: 0;
-  /* transition: all .3s ease-in-out; */
-  border-radius: 15px;
-  background-size: contain;
 }
 
 .desc-info-1, .desc-info-2,  .desc-info-3, .desc-info-4, .desc-info-5, .desc-info-6, .desc-info-7, .desc-info-8, .desc-info-9 {
@@ -309,12 +493,15 @@ nav ul li a:hover {
 
 .dot {
   cursor: pointer;
+  position: relative;
   height: 50px;
   width: 50px;
   margin: 0 2px;
+  margin-bottom: 10px;
+  bottom: 0%;
   background-color: #bbbbbb00;
   border-radius: 50%;
-  display: list-item;
+  display: block;
   transition: background-color 0.6s ease;
   font-family: 'VALORANT';
   font-size: 30px;
@@ -328,55 +515,44 @@ nav ul li a:hover {
 }
 
 .navegacion {
-  position: absolute;
-  padding: 3rem;
+  position: relative;
   top: 70rem;
-  left: 2%;
-  width: 100%;
-  height: 100%;
-  transition: .5s;
-  overflow: hidden;
-  font-family: 'VALORANT';
-  font-size: 25px;
+  text-align: center;
 }
 
-.navegacion ul{
-  font-family: 'VANDAL';
+.navegacion h2 {
+  font-family: 'VALORANT';
+  font-size: 40px;
+  margin-right: 87rem;
+}
+
+.navegacion ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  list-style: none;
   margin-top: 2%;
 }
 
-.navegacion li{
-  list-style: none;
-  /* background-color: #4140407a; */
+.navegacion ul li {
+  margin: 0 10px;
 }
 
-.navegacion span {
-  margin-top: 5%;
-  margin-left: 30%;
+.navegacion .titleMod {
+  font-family: 'VALORANT';
+  font-size: 30px;
 }
 
 .navegacion p {
-  /* box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, .35); */
-  width: 500px;
-  height: 150px;
-  opacity: 1;
-  font-size: large;
-  text-align: justify;
-  margin-top: 5%;
-}
-
-.navegacion p:hover{
-  opacity: 1;
-  transition: .3s ease-in-out;
+  font-family: 'VANDAL';
+  color: #fff;
+  font-size: 20px;
+  margin-top: 4%;
 }
 
 footer {
   position: relative;
   width: 100%;
-  top: 370px;
+  top: 80rem;
   left: 0%;
   padding: 2rem 15%;
   background-color: #0e0e0e;
@@ -384,6 +560,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: 'VALORANT';
 }
 
 .logopag {
@@ -428,6 +605,16 @@ footer {
   list-style-type: none;
   color: #ffffff;
   font-size: 18px;
+}
+
+.footer-menu-container a {
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+.footer-menu-container a::after{
+  text-decoration: none;
+  color: #f7f7f7;
 }
 
 .menu-item {

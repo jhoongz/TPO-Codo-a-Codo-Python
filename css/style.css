@@ -7,15 +7,15 @@
 }
 
 @font-face {
-  font-family: "VALORANT";
-  src: url("fonts/Valorant font.tff") format("truetype");
+  font-family: 'VALORANT';
+  src: url(https://www.dafont.com/es/valorant.font) format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'VANDAL';
-  src: url('fonts/VANDAL free font.ttf') format('truetype');
+  src: url(https://www.dafont.com/es/vandal.font) format('truetype');
   font-style: normal;
   font-weight: normal;
 }
