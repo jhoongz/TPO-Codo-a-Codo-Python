@@ -304,3 +304,32 @@ ul {
   }
 }
 
+/* API */
+
+.dolarTitle {
+  margin: 25px 125px;
+  padding: 5px 10px;
+  font-family: 'VALORANT';
+  font-size: 25px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  color: #ccc;
+}
+
+.dolarTitle:hover{
+  border: 2px;
+  background-color: #B70E21;
+}
+
+.dolarsi {
+  list-style: none;
+  padding: 0;
+}
+
+.dolarSi li {
+  display: inline-block;
+  width: 30%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+}

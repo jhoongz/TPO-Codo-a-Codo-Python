@@ -105,3 +105,36 @@ formulario.addEventListener('submit', (e) => {
     }
 })
 
+//API
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Obtener elementos de la lista y el botón
+    const exchangeList = document.getElementById('exchangeList');
+    const exchangeButton = document.getElementById('exchangeButton');
+
+    // Función para mostrar los valores de cambio al hacer clic en el botón
+    const showExchangeValues = () => {
+      // Realizar la solicitud HTTP GET a la API
+    fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
+        .then(response => response.json())
+        .then(data => {
+          // Limpiar la lista antes de mostrar los nuevos resultados
+        exchangeList.innerHTML = '';
+
+          // Recorrer los resultados y agregarlos a la lista
+        data.forEach(item => {
+            const casa = item.casa;
+            const nombre = casa.nombre;
+            const venta = casa.venta;
+
+            const li = document.createElement('li');
+            li.textContent = `${nombre}: ${venta}`;
+            exchangeList.appendChild(li);
+        });
+        })
+        .catch(error => console.error(error));
+    };
+
+    // Agregar evento de clic al botón
+    exchangeButton.addEventListener('click', showExchangeValues);
+});
