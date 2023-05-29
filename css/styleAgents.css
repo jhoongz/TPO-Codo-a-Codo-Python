@@ -1,15 +1,39 @@
 @font-face {
   font-family: "VALORANT";
-  src: url("fonts/Valorant font.tff") format("truetype");
+  src: url(https://www.dafont.com/es/valorant.font) format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'VANDAL';
-  src: url('fonts/VANDAL free font.ttf') format('truetype');
+  src: url(https://www.dafont.com/es/vandal.font) format('truetype');
   font-style: normal;
   font-weight: normal;
+}
+
+@media screen and (min-width: 700px){
+  .imgAg {
+    width: 50%;
+  }
+
+  .titleRol {
+    left: 10%;
+  }
+
+  .rol {
+    left: 10%;
+  }
+
+  .titleBio {
+    left: 10%;
+  }
+
+  .bio {
+    left: 10%;
+    font-size: 50%;
+  }
+
 }
 
 body {
@@ -127,11 +151,6 @@ h2 {
   margin-left: 40px;
 }
 
-.desc {
-  font-family: sans-serif, arial, georgia;
-  color: #f2f2f2;
-}
-
 .container {
   max-width: 1000px;
   position: relative;
@@ -218,14 +237,16 @@ section .dot {
 
 .name {
   position: absolute;
-  top: -2.5%;
-  margin-left: 20%;
+  bottom: 95%;
+  left: 25%;
+  color: #426e9c;
 }
 
 .titleRol {
   position: absolute;
   top: 0%;
-  margin-left: 50%;
+  left: 50%;
+  color: #ff4655;
 }
 
 .rol {
@@ -233,7 +254,7 @@ section .dot {
   font-size: 25px;
   position: absolute;
   top: 5%;
-  margin-left: 2%;
+  left: 50%;
 }
 
 .rol img {
@@ -244,16 +265,33 @@ section .dot {
 
 .titleBio {
   position: absolute;
-  top: 100px;
-  margin-left: 50%;
+  top: 12%;
+  left: 50%;
+  color: #ff4655;
 }
 
 .bio {
+  width: 35%;
   font-family: 'VANDAL';
   font-size: 20px;
+  text-align: justify;
   position: absolute;
   top: 21%;
-  margin-left: 2%;
+  left: 50%;
+}
+
+.cont {
+  position: absolute;
+  top: 58%;
+  left: 45%;
+}
+
+.titleHabs{
+  position: absolute;
+  width: 60%;
+  bottom: 170%;
+  left: 45%;
+  color: #ff4655;
 }
 
 .list {
@@ -272,6 +310,7 @@ section .dot {
 
 .butt {
   display: inline;
+  position: relative;
   background-color: #11111100;
   padding: 7px;
   border: none;
@@ -283,68 +322,57 @@ section .dot {
   position: relative;
 }
 
-.fig:hover figcaption{
-  display: block;
-}
-
-.cont {
-  position: absolute;
-  top: 260px;
-  margin-left: 455px;
-}
-
-.cont h1{
-  position: absolute;
-  width: 60%;
-  top: 43%;
-  margin-left: 50%;
-}
-
-.cont .s1{
-  position: absolute;
-  top: 80px;
-  margin-left: 5px;  
-}
-
-.cont .s2{
-  position: absolute;
-  top: 80px;
-  margin-left: 105px;  
-}
-
-.cont .s3{
-  position: absolute;
-  top: 80px;
-  margin-left: 210px;  
-}
-
-.cont .s4{
-  position: absolute;
-  top: 80px;
-  margin-left: 310px;  
-}
-
 .fig figcaption {
   display: none;
   position: absolute;
   width: 400px;
-  top: 190px;
-  margin-left: 30px;
   background: rgba(0, 0, 0, .1);
   text-align: center;
   font-family: 'VANDAL';
   color: #f2f2f2;
 }
 
-figcaption video {  
+.fig:hover figcaption{
+  display: block;
+}
+
+.cont img {
+  bottom: 0%;
+}
+
+.cont .s1{
+  position: absolute;
+  left: 5px;
+}
+
+.cont .s2{
+  position: absolute;
+  left: 105px;
+}
+
+.cont .s3{
+  position: absolute;
+  left: 210px;
+}
+
+.cont .s4{
+  position: absolute;
+  left: 310px; 
+}
+
+.s1 p, .s2 p, .s3, p, .s4 p {
+  text-align: justify;
+}
+
+.butt video {  
   width: 500px;
   height: 250px;
-  margin-left: -50px;
+  margin-left: -10%;
 }
 
 .cont img:hover {
   display: block;
-  background: rgba(160, 4, 4, .3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 footer {
